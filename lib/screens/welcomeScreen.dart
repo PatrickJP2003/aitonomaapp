@@ -26,7 +26,7 @@ class WelcomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'Bienvenido a NetHub',
+                  'Bienvenido a Notas',
                   style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
