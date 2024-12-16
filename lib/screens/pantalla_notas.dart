@@ -42,7 +42,6 @@ class _PantallaNotasState extends State<PantallaNotas> {
     });
   }
 
-
   _eliminarNota(String notaKey) {
     _dbRef.child('usuarios/${_user.uid}/notas/$notaKey').remove();
   }
@@ -76,10 +75,15 @@ class _PantallaNotasState extends State<PantallaNotas> {
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                image: DecorationImage(
+                  image: NetworkImage(
+                    'https://img1.wallspic.com/previews/7/4/2/9/7/179247/179247-artes_visuales-arte-diseno_grafico-diseno-graficos-500x.jpg',
+                  ),
+                  fit: BoxFit.cover,
+                ),
               ),
               child: Text(
-                'Elige una Opcion',
+                'Elige una Opción',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
